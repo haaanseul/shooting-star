@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
 import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:myapp/utils.dart';
-import 'package:myapp/page-1/login.dart';
 // import 'package:myapp/page-1/character.dart';
-// import 'package:myapp/page-1/home.dart';
+import 'package:myapp/utils.dart';
+// import 'package:myapp/page-1/character.dart';
+import 'package:myapp/page-1/home.dart';
 // import 'package:myapp/page-1/mission.dart';
 // import 'package:myapp/page-1/.dart';
 // import 'package:myapp/page-1/info.dart';
-// import 'package:myapp/page-1/-pcq.dart';
+// import 'package:myapp/page-1/-pcq.dart'; //1단계
 // import 'package:myapp/page-1/-ABT.dart';
 // import 'package:myapp/page-1/-TmT.dart';
 // import 'package:myapp/page-1/-2oB.dart';
@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
 	@override
 	Widget build(BuildContext context) {
 	return MaterialApp(
-		title: 'Flutter',
+		title: 'Shooting Star',
 		debugShowCheckedModeBanner: false,
 		scrollBehavior: MyCustomScrollBehavior(),
 		theme: ThemeData(
@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
 		),
 		home: Scaffold(
 		body: SingleChildScrollView(
-			child: Scene(),
+			child: Home_Scene(),
 		),
 		),
 	);

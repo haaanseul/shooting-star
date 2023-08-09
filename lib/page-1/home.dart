@@ -4,7 +4,7 @@ import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
 
-class Scene extends StatelessWidget {
+class Home_Scene extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double baseWidth = 360;
@@ -243,7 +243,7 @@ class Scene extends StatelessWidget {
                 ],
               ),
             ),
-            Container(
+            Container(  // 우주 화면
               // autogroupblkkRLd (EFm2xA86berzzzetVWbLKK)
               padding: EdgeInsets.fromLTRB(13*fem, 26*fem, 20*fem, 35*fem),
               width: double.infinity,
@@ -282,7 +282,7 @@ class Scene extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Container(
+                  Container( // 행성 분리 후 하나씩 스크롤 만들어줘야 댐
                     // group119vq (1:50)
                     width: 327*fem,
                     height: 577*fem,
