@@ -117,6 +117,7 @@ flutter:
     - assets/page-1/images/bg-9o7.png
     - assets/page-1/images/image-2-E5o.png
     - assets/page-1/images/saturn.png
+    - assets/page-1/images/progress-bt.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

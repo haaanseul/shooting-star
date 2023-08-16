@@ -5,10 +5,11 @@ import 'package:google_fonts/google_fonts.dart';
 // import 'package:myapp/page-1/character.dart';
 import 'package:myapp/utils.dart';
 // import 'package:myapp/page-1/character.dart';
-import 'package:myapp/page-1/home.dart';
+// import 'package:myapp/page-1/home.dart';
+// import 'package:myapp/page-1/progress.dart';
 // import 'package:myapp/page-1/mission.dart';
 // import 'package:myapp/page-1/.dart';
-// import 'package:myapp/page-1/info.dart';
+import 'package:myapp/page-1/home.dart';
 // import 'package:myapp/page-1/-pcq.dart'; //1단계
 // import 'package:myapp/page-1/-ABT.dart';
 // import 'package:myapp/page-1/-TmT.dart';
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
 		),
 		home: Scaffold(
 		body: SingleChildScrollView(
-			child: Home_Scene(),
+			child: Scene(),
 		),
 		),
 	);

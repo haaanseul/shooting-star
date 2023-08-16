@@ -4,7 +4,7 @@ import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
 
-class Home_Scene extends StatelessWidget {
+class Scene extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double baseWidth = 360;
@@ -184,120 +184,149 @@ class Home_Scene extends StatelessWidget {
                     ),
                   ),
                   Positioned(
-                    // Qnu (1:45)
-                    left: 22*fem,
-                    top: 395*fem,
-                    child: Container(
-                      padding: EdgeInsets.fromLTRB(44*fem, 11*fem, 38*fem, 15*fem),
-                      width: 318*fem,
-                      height: 59*fem,
-                      decoration: BoxDecoration (
-                        color: Color(0xffc0c1de),
-                        borderRadius: BorderRadius.circular(8*fem),
-                      ),
-                      child: Row(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Container(
-                            // H61 (1:47)
-                            margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 78*fem, 0*fem),
-                            child: Text(
-                              '추천정보 보러가기',
-                              style: SafeGoogleFont (
-                                'GangwonEduPower',
-                                fontSize: 26*ffem,
-                                fontWeight: FontWeight.w400,
-                                height: 1.2575*ffem/fem,
-                                color: Color(0xffffffff),
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                  Positioned(
-                    // yDj (1:271)
-                    left: 119.5*fem,
-                    top: 533*fem,
-                    child: Center(
-                      child: Align(
-                        child: SizedBox(
-                          width: 121*fem,
-                          height: 19*fem,
+                    left: 70 * fem,
+                    top: 420 * fem,
+                    child: Stack(
+                      alignment: Alignment.center,
+                      children: [
+                        Image.asset('assets/page-1/images/progress-bt.png',
+                        width: 310,
+                        height: 75,
+                        fit: BoxFit.cover,
+                        ),
+                        Container(
+                          padding: EdgeInsets.all(10),
+                          color: Colors.black54,
                           child: Text(
-                            '확인하려면 스크롤 해주세요 ',
-                            textAlign: TextAlign.center,
+                            '현재 진행상황',
                             style: SafeGoogleFont (
-                              'Cafe24 Oneprettynight',
-                              fontSize: 15*ffem,
+                              'GangwonEduPower',
+                              fontSize: 28*ffem,
                               fontWeight: FontWeight.w400,
                               height: 1.2575*ffem/fem,
-                              color: Color(0xff000000),
+                              color: Color(0xffffffff),
                             ),
-                          ),
-                        ),
-                      ),
-                    ),
+                          )
+                        )
+                      ],
+                    )
                   ),
-                ],
-              ),
-            ),
-            Container(  // 우주 화면
-              // autogroupblkkRLd (EFm2xA86berzzzetVWbLKK)
-              padding: EdgeInsets.fromLTRB(13*fem, 26*fem, 20*fem, 35*fem),
-              width: double.infinity,
-              decoration: BoxDecoration (
-                borderRadius: BorderRadius.circular(26*fem),
-                gradient: LinearGradient (
-                  begin: Alignment(0, -1),
-                  end: Alignment(0, 1),
-                  colors: <Color>[Color(0xffe892ec), Color(0xff4162d1)],
-                  stops: <double>[0, 1],
-                ),
-                image: DecorationImage (
-                  fit: BoxFit.cover,
-                  image: AssetImage (
-                    'assets/page-1/images/bg.png',
-                  ),
-                ),
-              ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  Center(
-                    // ejB (1:270)
-                    child: Container(
-                      margin: EdgeInsets.fromLTRB(2*fem, 0*fem, 0*fem, 50*fem),
-                      child: Text(
-                        '나의 진행상황',
-                        textAlign: TextAlign.center,
-                        style: SafeGoogleFont (
-                          'GangwonEduPower',
-                          fontSize: 23*ffem,
-                          fontWeight: FontWeight.w400,
-                          height: 1.2575*ffem/fem,
-                          color: Color(0xffffffff),
-                        ),
-                      ),
-                    ),
-                  ),
-                  Container( // 행성 분리 후 하나씩 스크롤 만들어줘야 댐
-                    // group119vq (1:50)
-                    width: 327*fem,
-                    height: 577*fem,
-                    child: Image.asset(
-                      'assets/page-1/images/group-11.png',
-                      width: 327*fem,
-                      height: 577*fem,
-                    ),
-                  ),
+
+                  // Positioned(
+                  //   // Qnu (1:45)
+                  //   left: 22*fem,
+                  //   top: 395*fem,
+                  //   child: Container(
+                  //     padding: EdgeInsets.fromLTRB(44*fem, 11*fem, 38*fem, 15*fem),
+                  //     width: 318*fem,
+                  //     height: 59*fem,
+                  //     decoration: BoxDecoration (
+                  //       color: Color(0xffc0c1de),
+                  //       borderRadius: BorderRadius.circular(8*fem),
+                  //     ),
+                  //     child: Row(
+                  //       crossAxisAlignment: CrossAxisAlignment.center,
+                  //       children: [
+                  //         Container(
+                  //           // H61 (1:47)
+                  //           margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 78*fem, 0*fem),
+                  //           child: Text(
+                  //             '추천정보 보러가기',
+                  //             style: SafeGoogleFont (
+                  //               'GangwonEduPower',
+                  //               fontSize: 26*ffem,
+                  //               fontWeight: FontWeight.w400,
+                  //               height: 1.2575*ffem/fem,
+                  //               color: Color(0xffffffff),
+                  //             ),
+                  //           ),
+                  //         ),
+                  //       ],
+                  //     ),
+                  //   ),
+                  // ),
+                  //       Positioned(
+                  //         // yDj (1:271)
+                  //         left: 119.5*fem,
+                  //         top: 533*fem,
+                  //         child: Center(
+                  //           child: Align(
+                  //             child: SizedBox(
+                  //               width: 121*fem,
+                  //               height: 19*fem,
+                  //               child: Text(
+                  //                 '확인하려면 스크롤 해주세요 ',
+                  //                 textAlign: TextAlign.center,
+                  //                 style: SafeGoogleFont (
+                  //                   'Cafe24 Oneprettynight',
+                  //                   fontSize: 15*ffem,
+                  //                   fontWeight: FontWeight.w400,
+                  //                   height: 1.2575*ffem/fem,
+                  //                   color: Color(0xff000000),
+                  //                 ),
+                  //               ),
+                  //             ),
+                  //           ),
+                  //         ),
+                  //       ),
+                  //     ],
+                  //   ),
+                  // ),
+                  // Container(
+                  //   // autogroupblkkRLd (EFm2xA86berzzzetVWbLKK)
+                  //   padding: EdgeInsets.fromLTRB(13*fem, 26*fem, 20*fem, 35*fem),
+                  //   width: double.infinity,
+                  //   decoration: BoxDecoration (
+                  //     borderRadius: BorderRadius.circular(26*fem),
+                  //     gradient: LinearGradient (
+                  //       begin: Alignment(0, -1),
+                  //       end: Alignment(0, 1),
+                  //       colors: <Color>[Color(0xffe892ec), Color(0xff4162d1)],
+                  //       stops: <double>[0, 1],
+                  //     ),
+                  //     image: DecorationImage (
+                  //       fit: BoxFit.cover,
+                  //       image: AssetImage (
+                  //         'assets/page-1/images/bg.png',
+                  //       ),
+                  //     ),
+                  //   ),
+                  //   child: Column(
+                  //     crossAxisAlignment: CrossAxisAlignment.center,
+                  //     children: [
+                  //       Center(
+                  //         // ejB (1:270)
+                  //         child: Container(
+                  //           margin: EdgeInsets.fromLTRB(2*fem, 0*fem, 0*fem, 50*fem),
+                  //           child: Text(
+                  //             '나의 진행상황',
+                  //             textAlign: TextAlign.center,
+                  //             style: SafeGoogleFont (
+                  //               'GangwonEduPower',
+                  //               fontSize: 23*ffem,
+                  //               fontWeight: FontWeight.w400,
+                  //               height: 1.2575*ffem/fem,
+                  //               color: Color(0xffffffff),
+                  //             ),
+                  //           ),
+                  //         ),
+                  //       ),
+                  //       Container(
+                  //         // group119vq (1:50)
+                  //         width: 327*fem,
+                  //         height: 577*fem,
+                  //         child: Image.asset(
+                  //           'assets/page-1/images/group-11.png',
+                  //           width: 327*fem,
+                  //           height: 577*fem,
+                  //         ),
+                  //       ),
                 ],
               ),
             ),
           ],
         ),
       ),
-          );
+    );
   }
 }
