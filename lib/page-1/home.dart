@@ -142,27 +142,6 @@ class Scene extends StatelessWidget {
                     ),
                   ),
                   Positioned(
-                    // 2XT (1:34)
-                    left: 80*fem,
-                    top: 84*fem,
-                    child: Align(
-                      child: SizedBox(
-                        width: 141*fem,
-                        height: 46*fem,
-                        child: Text(
-                          '오늘의 미션은',
-                          style: SafeGoogleFont (
-                            'GangwonEduPower',
-                            fontSize: 36*ffem,
-                            fontWeight: FontWeight.w400,
-                            height: 1.2575*ffem/fem,
-                            color: Color(0xff000000),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                  Positioned(
                     // 7Yu (1:35)
                     left: 120*fem,
                     top: 61*fem,
@@ -183,68 +162,69 @@ class Scene extends StatelessWidget {
                       ),
                     ),
                   ),
+
                   Positioned(
-                    left: 70 * fem,
-                    top: 420 * fem,
-                    child: Stack(
-                      alignment: Alignment.center,
-                      children: [
-                        Image.asset('assets/page-1/images/progress-bt.png',
-                        width: 310,
-                        height: 75,
-                        fit: BoxFit.cover,
-                        ),
-                        Container(
-                          padding: EdgeInsets.all(10),
-                          color: Colors.black54,
-                          child: Text(
-                            '현재 진행상황',
-                            style: SafeGoogleFont (
-                              'GangwonEduPower',
-                              fontSize: 28*ffem,
-                              fontWeight: FontWeight.w400,
-                              height: 1.2575*ffem/fem,
-                              color: Color(0xffffffff),
+                    // Qnu (1:45)
+                    left: 22*fem,
+                    top: 385*fem,
+                    child: Container(
+                      padding: EdgeInsets.fromLTRB(44*fem, 11*fem, 38*fem, 15*fem),
+                      width: 318*fem,
+                      height: 59*fem,
+                      decoration: BoxDecoration (
+                        color: Color(0xffc0c1de),
+                        borderRadius: BorderRadius.circular(8*fem),
+                      ),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Container(
+                            // H61 (1:47)
+                            margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 78*fem, 0*fem),
+                            child: Text(
+                              '추천정보 보러가기',
+                              style: SafeGoogleFont (
+                                'GangwonEduPower',
+                                fontSize: 26*ffem,
+                                fontWeight: FontWeight.w400,
+                                height: 1.2575*ffem/fem,
+                                color: Color(0xffffffff),
+                              ),
                             ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  Positioned(
+                      left: 70 * fem,
+                      top: 460 * fem,
+                      child: Stack(
+                        alignment: Alignment.center,
+                        children: [
+                          Image.asset('assets/page-1/images/progress-bt.png',
+                            width: 310,
+                            height: 80,
+                            fit: BoxFit.cover,
+                          ),
+                          Container(
+                              padding: EdgeInsets.all(10),
+                              color: Colors.black54,
+                              child: Text(
+                                '현재 진행상황',
+                                style: SafeGoogleFont (
+                                  'GangwonEduPower',
+                                  fontSize: 25*ffem,
+                                  fontWeight: FontWeight.w400,
+                                  height: 1.2575*ffem/fem,
+                                  color: Color(0xffffffff),
+                                ),
+                              )
                           )
-                        )
-                      ],
-                    )
+                        ],
+                      )
                   ),
 
-                  // Positioned(
-                  //   // Qnu (1:45)
-                  //   left: 22*fem,
-                  //   top: 395*fem,
-                  //   child: Container(
-                  //     padding: EdgeInsets.fromLTRB(44*fem, 11*fem, 38*fem, 15*fem),
-                  //     width: 318*fem,
-                  //     height: 59*fem,
-                  //     decoration: BoxDecoration (
-                  //       color: Color(0xffc0c1de),
-                  //       borderRadius: BorderRadius.circular(8*fem),
-                  //     ),
-                  //     child: Row(
-                  //       crossAxisAlignment: CrossAxisAlignment.center,
-                  //       children: [
-                  //         Container(
-                  //           // H61 (1:47)
-                  //           margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 78*fem, 0*fem),
-                  //           child: Text(
-                  //             '추천정보 보러가기',
-                  //             style: SafeGoogleFont (
-                  //               'GangwonEduPower',
-                  //               fontSize: 26*ffem,
-                  //               fontWeight: FontWeight.w400,
-                  //               height: 1.2575*ffem/fem,
-                  //               color: Color(0xffffffff),
-                  //             ),
-                  //           ),
-                  //         ),
-                  //       ],
-                  //     ),
-                  //   ),
-                  // ),
                   //       Positioned(
                   //         // yDj (1:271)
                   //         left: 119.5*fem,
