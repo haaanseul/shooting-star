@@ -38,6 +38,11 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   google_fonts: ^5.0.1
+  firebase_core: ^2.15.0
+  cloud_firestore: ^4.8.4
+  flutter_screenutil: ^5.8.4
+  modal_progress_hud_nsn: ^0.4.0
+  chat_bubbles: ^1.5.0
 
 dev_dependencies:
   flutter_test:
@@ -66,57 +71,45 @@ flutter:
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
   assets:
-    - assets/page-1/images/hand-1.png
-    - assets/page-1/images/.png
-    - assets/page-1/images/hospital-1.png
+    - assets/page-1/images/neptune.png
+    - assets/page-1/images/uranus.png
+    - assets/page-1/images/saturn.png
+    - assets/page-1/images/jupiter.png
+    - assets/page-1/images/mars.png
+    - assets/page-1/images/earth.png
+    - assets/page-1/images/bg.png
+    - assets/page-1/images/-Bzy.png
     - assets/page-1/images/-DFo.png
-    - assets/page-1/images/arrow-1.png
+    - assets/page-1/images/-pmo.png
     - assets/page-1/images/-Zff.png
-    - assets/page-1/images/icattachmentblack18px.png
+    - assets/page-1/images/arrow-1.png
+    - assets/page-1/images/book-1-1.png
+    - assets/page-1/images/character.png
+    - assets/page-1/images/hand-1.png
     - assets/page-1/images/headhunting-1.png
     - assets/page-1/images/home-1.png
-    - assets/page-1/images/icsendblack24px.png
-    - assets/page-1/images/earth.png
-    - assets/page-1/images/book-1-1.png
-    - assets/page-1/images/auto-group-y6tq.png
-    - assets/page-1/images/earth-9jw.png
-    - assets/page-1/images/-pmo.png
-    - assets/page-1/images/-Bzy.png
-    - assets/page-1/images/venus.png
+    - assets/page-1/images/hospital-1.png
     - assets/page-1/images/networking-1.png
-    - assets/page-1/images/group-51.png
-    - assets/page-1/images/rectangle-10.png
-    - assets/page-1/images/jupiter.png
-    - assets/page-1/images/rectangle-11.png
-    - assets/page-1/images/venus-ctq.png
-    - assets/page-1/images/character.png
-    - assets/page-1/images/character-eBB.png
-    - assets/page-1/images/rectangle-12.png
-    - assets/page-1/images/mars.png
-    - assets/page-1/images/image-3.png
-    - assets/page-1/images/auto-group-wwuw.png
-    - assets/page-1/images/image-2.png
-    - assets/page-1/images/image-3-pT3.png
-    - assets/page-1/images/image-3-gc9.png
-    - assets/page-1/images/image-2-8cH.png
-    - assets/page-1/images/image-2-XRB.png
-    - assets/page-1/images/image-2-u45.png
-    - assets/page-1/images/image-3-eem.png
-    - assets/page-1/images/image-2-UAD.png
-    - assets/page-1/images/bg.png
-    - assets/page-1/images/group-11.png
-    - assets/page-1/images/image-3-5Gm.png
-    - assets/page-1/images/image-2-Y1f.png
-    - assets/page-1/images/image-2-Vnh.png
-    - assets/page-1/images/image-2-SC9.png
-    - assets/page-1/images/image-3-Mw7.png
-    - assets/page-1/images/image-1.png
-    - assets/page-1/images/image-2-kDo.png
-    - assets/page-1/images/image-2-gad.png
-    - assets/page-1/images/image-2-yjw.png
-    - assets/page-1/images/bg-9o7.png
-    - assets/page-1/images/image-2-E5o.png
-    - assets/page-1/images/saturn.png
+    - assets/page-1/images/puppy.png   
+    - assets/page-1/images/rectangle.png   
+    - assets/page-1/images/chat_puppy1.png      
+    - assets/page-1/images/chat_bubble.png 
+    - assets/page-1/images/puppy_face.png 
+    - assets/page-1/images/rest_puppy.png 
+    
+  fonts:
+    - family: Cafe24Oneprettynight
+      fonts:
+        - asset: assets/page-1/fonts/Cafe24Oneprettynight.ttf
+    - family : GangwonEduPower
+      fonts : 
+        - asset : assets/page-1/fonts/강원교육튼튼.ttf
+    - family : S-Core Dream
+      fonts : 
+        - asset : assets/page-1/fonts/SCDream3.otf
+        
+
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
