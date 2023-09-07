@@ -39,7 +39,7 @@ class UranusStep extends StatelessWidget {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => const ProgressPage()));
+                                  builder: (context) => ProgressPage()));
                         },
                         icon: const Icon(
                           Icons.arrow_back_ios_new,

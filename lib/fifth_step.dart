@@ -40,7 +40,7 @@ class MarsStep extends StatelessWidget {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => const ProgressPage()));
+                                  builder: (context) => ProgressPage()));
                         },
                         icon: const Icon(
                           Icons.arrow_back_ios_new,
@@ -93,8 +93,9 @@ class MarsStep extends StatelessWidget {
                   Expanded(
                     child: StreamBuilder(
                       stream: FirebaseFirestore.instance
-                          .collection(
-                              'aaa/jIIu9Ny5fc66glz08nPW/bbb') //firestore collection 경로
+                          // .collection(
+                          //     'aaa/jIIu9Ny5fc66glz08nPW/bbb') //firestore collection 경로
+                          .collection('chats/34eElPmMIvD79SRdGvam/chat')
                           .snapshots(),
                       builder: (BuildContext context,
                           AsyncSnapshot<QuerySnapshot<Map<String, dynamic>>>
@@ -120,25 +121,26 @@ class MarsStep extends StatelessWidget {
                                       SizedBox(
                                         height: 40.h,
                                       ),
-                                      Text(
-                                        docs[index]['date'],
-                                        style: TextStyle(
-                                          fontFamily: 'Cafe24Oneprettynight',
-                                          fontSize: 35.sp,
-                                          fontWeight: FontWeight.w400,
-                                          color: const Color(0xFFA12600),
-                                        ),
-                                      ),
-                                      Padding(
-                                        padding: const EdgeInsets.all(15),
-                                        child: SizedBox(
-                                          //이미지
-                                          width: 250.w,
-                                          height: 250.h,
-                                          child: Image.network(
-                                              'https://firebasestorage.googleapis.com/v0/b/test-app-98316.appspot.com/o/1643900851960.jpg?alt=media&token=2e5e7063-970b-459c-b2d5-e9cc1c8da67c'),
-                                        ),
-                                      ),
+                                      // Text(
+                                      //   // docs[index]['date'],
+                                      //   docs[index]['time'],
+                                      //   style: TextStyle(
+                                      //     fontFamily: 'Cafe24Oneprettynight',
+                                      //     fontSize: 35.sp,
+                                      //     fontWeight: FontWeight.w400,
+                                      //     color: const Color(0xFFA12600),
+                                      //   ),
+                                      // ),
+                                      // Padding(
+                                      //   padding: const EdgeInsets.all(15),
+                                      //   child: SizedBox(
+                                      //     //이미지
+                                      //     width: 250.w,
+                                      //     height: 250.h,
+                                      //     child: Image.network(
+                                      //         'https://firebasestorage.googleapis.com/v0/b/test-app-98316.appspot.com/o/1643900851960.jpg?alt=media&token=2e5e7063-970b-459c-b2d5-e9cc1c8da67c'),
+                                      //   ),
+                                      // ),
                                       Expanded(
                                         child: Container(
                                           width: 350.h,
