@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # test
 
 A new Flutter project.
@@ -14,3 +15,7 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+=======
+# shooting-star
+은둔형 외톨이를 위한 매일 미션 어플
+>>>>>>> 637661d4b06070dd1e25b78639955a1fabef9cf5
